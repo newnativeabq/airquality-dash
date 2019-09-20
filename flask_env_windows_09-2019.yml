@@ -1,0 +1,27 @@
+# run: conda env create --file flask_env_09-2019.yml
+name: flask
+channels:
+- defaults
+- conda-forge
+dependencies:
+# - gunicorn
+- matplotlib
+- numpy
+- pandas
+- pip
+- psycopg2
+- pytest
+- python=3.7.3
+- requests
+- seaborn
+- scipy
+- scikit-learn
+- pip:
+  - alembic==1.1
+  - celery==4.3
+  - Flask==1.1.1
+  - Flask-WTF==0.14.2
+  - joblib==0.11.0
+  - redis==3.3
+  - WTForms
+  - tweepy

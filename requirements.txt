@@ -1,0 +1,19 @@
+matplotlib
+numpy
+pandas
+pip
+psycopg2
+pytest
+python == 3.7.3
+requests
+seaborn
+scipy
+scikit-learn
+alembic == 1.1
+celery == 4.3
+Flask == 1.1.1
+Flask-WTF == 0.14.2
+joblib == 0.11.0
+WTForms
+py-openaq
+flask-sqlalchemy
