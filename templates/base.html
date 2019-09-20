@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AirCloud - {{ title }}</title>
+
+    <!-- adding link to picnic css stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/picnic"/>
+  </head>
+  <body>
+    <nav>
+      <a href="/" class="brand"><span>AirCloud!</span></a>
+
+      <!-- Create menu -->
+      <input id="bmenub" type="checkbox" class="show">
+      <label for="bmenub" class="burger pseudo button">Menu</label>
+
+      <div class="menu">
+        <a href="/refresh" class="button error">Refresh Database</a>
+      </div>
+    </nav>
+
+    <article class="flex two" style="padding: 3em 1em;">
+      <div>
+        <h1>{{ title }}</h1>
+        <!-- Select City And Refresh Data -->
+      <h4>Select City</h4>
+      <form action="{{ url_for('refresh')}}" method="POST">
+          {{ form.hidden_tag() }}
+          <p>
+              {{ form.city.label }} <br>
+              {{ form.city }}
+          </p>
+          <p>
+              {{ form.submit() }}
+          </p>
+      </form>
+      {% block content %}
+      {% endblock %}
+    </article>
+  </body>
+</html>
