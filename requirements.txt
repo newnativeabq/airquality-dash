@@ -4,7 +4,7 @@ pandas
 pip
 psycopg2
 pytest
-python == 3.7.3
+python
 requests
 seaborn
 scipy
